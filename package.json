@@ -1,6 +1,7 @@
 {
   "name": "object-detection-tensorflow-js",
   "version": "0.1.0",
+  "homepage": "https://yukihirai0505.github.io/object-detection-tensorflow-js/",
   "private": true,
   "dependencies": {
     "@tensorflow-models/coco-ssd": "^0.1.1",
@@ -16,13 +17,15 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-googleappsscript": "^1.0.1",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-prettier": "^3.0.0"
+    "eslint-plugin-prettier": "^3.0.0",
+    "gh-pages": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && npx gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
